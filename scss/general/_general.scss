@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
+
+body {
+    font-family: $font-prime;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+}
+
+a {
+    color: $white;
+    transition: color 0.25s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1110px;
+}
