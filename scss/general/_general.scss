@@ -20,6 +20,21 @@ a {
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
     width: 1110px;
 }
+
+.visually-hidden {
+    /* Contain text within 1px box*/
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+
+    /* Keep the layout*/
+    position: absolute;
+
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px, 1px, 1px, 1px); 
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7*/
+    clip-path: inset(50%) /* browsers in the future */;
+}
+
