@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 51px;
+    background-color: $footer-bg;
+
+    // .footer__grid
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    // .footer__logo
+    &__logo {
+        margin-top: -12px;
+    }
+
+    // .footer__nav
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    // .footer__links
+    &__socials {
+        display: flex;
+        margin-top: 20px;
+        width: 176px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

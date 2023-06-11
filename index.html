@@ -11,7 +11,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header none">
         <div class="container">
             <div class="header__top">
                 <a href="#!"><img src="./img/logo.svg" alt="CitySkyline"></a>
@@ -48,7 +48,7 @@
     </header>
     <!-- Main -->
     <main class="main">
-        <section class="advantages container">
+        <section class="advantages none">
             <h2 class="visually-hidden">House estate advantages</h2>
 
             <div class="advantages__info">
@@ -72,11 +72,175 @@
                 </div>
             </div>
         </section>
+
+        <section class="apartments container">
+            <div class="apartments__title">
+                <h2 class="title-2">Наши квартиры</h2>
+            </div>
+            <div class="apartments__cards">
+                <a href="#!" class="card">
+                    <img src="./img/main/2-section/01.jpg" class="card__img" alt="Sky Олимп">
+                    <h3 class="card__title">
+                        Пентхаус “Sky Олимп”
+                    </h3>
+                </a>
+                <a href="#!" class="card">
+                    <img src="./img/main/2-section/02.jpg" class="card__img" alt="Sky Олимп">
+                    <h3 class="card__title">
+                        Апартаменты “Nice Sky”
+                    </h3>
+                </a>
+                <a href="#!" class="card">
+                    <img src="./img/main/2-section/03.jpg" class="card__img" alt="Sky Олимп">
+                    <h3 class="card__title">
+                        Апартаменты “Sky Studio”
+                    </h3>
+                </a>
+                <a href="#!" class="card">
+                    <img src="./img/main/2-section/04.jpg" class="card__img" alt="Sky Олимп">
+                    <h3 class="card__title">
+                        Sky квартира “Престиж”
+                    </h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__title">
+                    <h2 class="title-2">Хотите посмотреть?</h2>
+                </div>
+                <div class="cta__info">
+                    <div class="cta__text">
+                        <p>ЖК CitySkyline – это проект бизнес-класса, расположенный в центре города, на Наб. реки 12-34.
+                            Комплекс предлагает своим жильцам квартиры площадью от 34 до 123 кв. м. В здании будет три
+                            секции, в которых разместится всего 78 квартир.</p>
+                    </div>
+                    <div class="cta__form">
+                        <form action="form" class="form">
+                            <input type="text" class="form__input" placeholder="Ваше имя">
+                            <input type="text" class="form__input" placeholder="Ваш телефон">
+                            <p class="form__politicy">*Мы никому не передаем ваши данные.<br />
+                                И не сохраняем ваш номер в базу.</p>
+                            <button type="submit" class="form__button">
+                                Посмотреть район
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2 class="visually-hidden">Video about housing estate</h2>
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=niYp732Wv-Y" class="video__link">
+                    <img src="./img/main/4-section/play.svg" alt="video__play" class="video__play">
+                    <img src="./img/main/4-section/start video.jpg" alt="video__img" class="video__img">
+                </a>
+            </div>
+        </section>
+
+        <section class="maps">
+            <div class="container">
+                <div class="maps__title">
+                    <h2 class="title-2">Район на карте</h2>
+                </div>
+                <div class="maps__interactive">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__title">
+                    <h2 class="title-2">
+                        Есть вопросы?
+                    </h2>
+                </div>
+                <form class="feedback__form form">
+                    <p class="form__politicy">*Мы никому не передаем ваши данные.<br />
+                        И не сохраняем ваш номер в базу.</p>
+
+                    <input type="text" class="form__input" placeholder="Ваше имя">
+                    <input type="text" class="form__input" placeholder="Ваш телефон">
+
+                    <button type="submit" class="form__button">
+                        Посмотреть район
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-
+        <div class="container">
+            <ul class="footer__grid">
+                <div class="footer__logo">
+                    <a href="#!"><img src="./img/logo.svg" alt="CitySkyline"></a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="#!">
+                                О комплексе
+                            </a></li>
+                        <li><a href="#!">
+                                Район
+                            </a></li>
+                        <li><a href="#!">
+                                Каталог квартир
+                            </a></li>
+                        <li><a href="#!">
+                                Ипотека
+                            </a></li>
+                        <li><a href="#!">
+                                Контакты
+                            </a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="#!">
+                                Поселение и переезд
+                            </a></li>
+                        <li><a href="#!">
+                                Сервисные услуги
+                            </a></li>
+                        <li><a href="#!">
+                                Экологическая устойчивость
+                            </a></li>
+                        <li><a href="#!">
+                                Инвестиционные возможности
+                            </a></li>
+                        <li><a href="#!">
+                                Программа лояльности
+                            </a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li>Адрес: Наб. реки Фонтанки 10-15</li>
+                        <li>Телефон: <a href="tel:+781234567">
+                                8 (812) 123-45-67
+                            </a></li>
+                        <li>
+                            Отдел продаж: 10:00 - 20:00
+                        </li>
+                        <li>E-mail:<a class="mail" href="mailto:vip@cityskyline.ru">
+                                vip@cityskyline.ru
+                            </a></li>
+                    </ul>
+                    <ul class="footer__socials">
+                        <li><a href="#!"><img src="./img/footer/ytube.svg" alt="youtube"></a></li>
+                        <li><a href="#!"><img src="./img/footer/vk.svg" alt="vkontakte"></a></li>
+                        <li><a href="#!"><img src="./img/footer/fbook.svg" alt="facebook"></a></li>
+                        <li><a href="#!"><img src="./img/footer/igram.svg" alt="instagram"></a></li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
     </footer>
 
     <script src="./js/main.js"></script>

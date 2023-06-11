@@ -1,0 +1,16 @@
+.maps {
+    padding: 180px 0;
+
+    // .maps__title
+    &__title {
+        margin-bottom: 88px;
+    }
+
+    // .maps__interactive
+    &__interactive {}
+}
+
+.map {
+    height: 358px;
+    background: #626262;
+}
