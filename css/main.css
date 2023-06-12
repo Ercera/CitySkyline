@@ -382,6 +382,7 @@ a:hover {
 .cta__text p + p {
   margin-top: 1em;
 }
+
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
