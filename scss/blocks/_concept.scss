@@ -25,24 +25,6 @@
         }
     }
 
-    @include mediaTablet {
-        &::before {
-            bottom: 0px;
-        }
-    }
-
-    @include mediaPhone {
-        &::before {
-            // bottom: 0px;
-        }
-    }
-
-    @include mediaPhone {
-        &::before {
-            // bottom: -5px;
-        }
-    }
-
     // .concept__title 
     &__title {
         padding: 170px 0 200px;
@@ -105,7 +87,7 @@
 
         @include mediaLaptop {
             max-width: 490px;
-            padding-bottom: 45px;
+            padding-bottom: 42px;
             font-size: 18px;
         }
 
