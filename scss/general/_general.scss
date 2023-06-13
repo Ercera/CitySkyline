@@ -20,7 +20,8 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 1110px;
+    padding: 0 15px;
+    max-width: 1140px;
 }
 
 .visually-hidden {
@@ -33,9 +34,12 @@ a {
     position: absolute;
 
     /* Remove any visible trace (e.g. background color) */
-    clip: rect(1px, 1px, 1px, 1px); 
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7*/
-    clip-path: inset(50%) /* browsers in the future */;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7*/
+    clip-path: inset(50%)
+        /* browsers in the future */
+    ;
 }
 
 .none {

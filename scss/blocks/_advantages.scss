@@ -1,8 +1,18 @@
 .advantages {
+    position: relative;
     min-height: 420px;
     padding: 120px 0;
     display: flex;
     justify-content: center;
+
+    &::after {
+        content: "II";
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0);
+        line-height: 1.185;
+        
+        @include bgNumbers;
+    }
 
     &__info {
         width: 794px;

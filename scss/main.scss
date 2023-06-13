@@ -2,12 +2,14 @@
 
 @import './general/reset';
 @import './general/vars';
+@import './general/mixins';
 @import './general/general';
 
 
 // Blocks
 @import './blocks/header';
 @import './blocks/nav';
+@import './blocks/concept';
 @import './blocks/advantages';
 @import './blocks/apartments';
 @import './blocks/card';

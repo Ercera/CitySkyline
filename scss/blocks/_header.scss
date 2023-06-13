@@ -1,74 +1,22 @@
 .header {
-    background:
-        linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../img/header/first-section-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
 
-    &__top {
+    &__nav {
         padding: 30px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    &__title {
-        padding: 170px 0 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        row-gap: 81px;
-    }
-
-    h1 {
-        font-size: 48px;
-        font-weight: 700;
-        font-family: $font-headings;
-        color: $accent;
-    }
-
-    &__info {
-        max-width: 540px;
-        margin: 0 auto 74px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: $font-prime;
-        color: $white;
-
-        &--address {
-            position: relative;
-            padding-left: 35px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0px;
-                top: 0px;
-                width: 21px;
-                height: 21px;
-                background-image: url('./../img/header/map.svg');
-                background-repeat: no-repeat;
-            }
+        @include mediaLaptop {
+            padding: 25px 0;
         }
 
-        &--number {
-            position: relative;
-            padding-left: 35px;
+        @include mediaTablet {
+            padding: 20px 0;
+        }
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0px;
-                top: 0px;
-                width: 21px;
-                height: 21px;
-                background-image: url('./../img/header/phone.svg');
-                background-repeat: no-repeat;
-            }
+        @include mediaPhone {
+            padding: 10px 0;
         }
     }
-
 }

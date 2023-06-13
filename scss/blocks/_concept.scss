@@ -1,0 +1,157 @@
+.concept {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 840px;
+        top: -($header-size);
+        z-index: -1;
+        background: linear-gradient(180deg,
+                #242B33 11.98%,
+                rgba(45, 52, 60, 0.38) 51.04%,
+                #242B33 92.19%,
+                #242B33 92.2%),
+            url(./../img/main/concept/first-section-bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    @include mediaLaptop {
+        &::before {
+            bottom: 0px;
+            height: unset;
+        }
+    }
+
+    @include mediaTablet {
+        &::before {
+            bottom: 0px;
+        }
+    }
+
+    @include mediaPhone {
+        &::before {
+            // bottom: 0px;
+        }
+    }
+
+    @include mediaPhone {
+        &::before {
+            // bottom: -5px;
+        }
+    }
+
+    // .concept__title 
+    &__title {
+        padding: 170px 0 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 81px;
+
+        @include mediaLaptop {
+            padding: 105px 0 130px;
+            row-gap: 70px;
+        }
+
+        @include mediaTablet {
+            padding: 70px 0 90px;
+            row-gap: 50px;
+        }
+
+        @include mediaPhone {
+            padding: 30px 0 60px;
+            row-gap: 25px;
+        }
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: $font-headings;
+        color: $accent;
+
+        @include mediaLaptop {
+            font-size: 44px;
+        }
+
+        @include mediaTablet {
+            font-size: 40px;
+        }
+
+        @include mediaPhone {
+            font-size: 36px;
+        }
+
+        @include mediaPhone {
+            font-size: 30px;
+        }
+    }
+
+    &__info {
+        max-width: 540px;
+        margin: 0 auto;
+        padding-bottom: 74px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $font-prime;
+        color: $white;
+
+        @include mediaLaptop {
+            max-width: 490px;
+            padding-bottom: 45px;
+            font-size: 18px;
+        }
+
+        @include mediaTablet {
+            max-width: 440px;
+            padding-bottom: 40px;
+            font-size: 17px;
+        }
+
+        @include mediaPhone {
+            padding-bottom: 20px;
+            flex-direction: column;
+            row-gap: 15px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        @include mediaPhoneSE {
+            padding-bottom: 10px;
+            font-size: 15px;
+        }
+
+        &--address,
+        &--number {
+            position: relative;
+            padding-left: 35px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0;
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        &--address::before {
+            background-image: url('./../img/main/concept/map.svg');
+        }
+
+        &--number::before {
+            background-image: url('./../img/main/concept/phone.svg');
+        }
+    }
+
+}

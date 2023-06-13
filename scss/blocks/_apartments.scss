@@ -1,6 +1,15 @@
 .apartments {
+    position: relative;
 
-    // min-height: 806px;
+    &::before {
+        content: "III";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0);
+        line-height: 1;
+
+        @include bgNumbers;
+    }
+
     // .apartments__title
     &__title {
         margin-bottom: 88px;

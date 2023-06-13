@@ -1,5 +1,15 @@
 .video {
+    position: relative;
     text-align: center;
+
+    &::after {
+        content: "IV";
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0);
+        line-height: 1.5;
+
+        @include bgNumbers;
+    }
 
     // .video__link
     &__link {
@@ -23,6 +33,7 @@
             background: linear-gradient(0deg,
                     rgba(36, 43, 51, 0.7));
         }
+
         &:hover .video__play {
             transform: translate(-50%, -50%) scale(1.2);
             filter: saturate(1.5);

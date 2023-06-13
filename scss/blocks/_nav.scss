@@ -1,8 +1,21 @@
 .nav {
+    letter-spacing: 0.05em;
     font-size: 14px;
+    
+    @include mediaTablet {
+        display: none;
+    }
 
     &__list {
         display: flex;
         column-gap: 40px;
+    }
+
+    &__btn {
+        display: none;
+
+        @include mediaTablet {
+            display: block;
+        }
     }
 }

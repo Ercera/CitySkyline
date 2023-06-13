@@ -1,5 +1,16 @@
 .maps {
+    position: relative;
     padding: 180px 0;
+
+    &::before {
+        content: "V";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0);
+        line-height: 1;
+        
+        @include bgNumbers;
+        top: 180px;
+    }
 
     // .maps__title
     &__title {
