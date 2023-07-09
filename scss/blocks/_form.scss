@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px 30px;
+
     // .form__input
     &__input {
         height: 50px;
@@ -20,6 +21,18 @@
         }
     }
 
+    @include mediaLaptop {
+        gap: 25px;
+    }
+
+    @include mediaTablet {
+        gap: 20px;
+    }
+
+    @include mediaPhone {
+        grid-template-columns: 1fr;
+    }
+
     // .form__politicy
     &__politicy {
         font-size: 13px;
@@ -28,6 +41,25 @@
         align-items: center;
         text-align: center;
         color: $politicy;
+
+        @include mediaLaptop {
+            font-size: 12px;
+            justify-content: center;
+        }
+
+        @include mediaTablet {
+            font-size: 10px;
+        }
+
+        @include mediaPhone {
+            font-size: 10px;
+        }
+
+        &--bottom {
+            @include mediaPhone {
+                grid-row: 4 / 5;
+            }
+        }
     }
 
     // .form__button
@@ -39,8 +71,9 @@
         font-weight: 700;
         color: $white;
         background-color: $accent;
+
         &:hover {
-            background-color: saturate($accent,10%);
+            background-color: saturate($accent, 10%);
         }
     }
 }

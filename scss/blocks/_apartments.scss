@@ -13,6 +13,22 @@
     // .apartments__title
     &__title {
         margin-bottom: 88px;
+
+        @include mediaLaptop {
+            margin-bottom: 78px;
+        }
+
+        @include mediaTablet {
+            margin-bottom: 60px;
+        }
+
+        @include mediaPhone {
+            margin-bottom: 40px;
+        }
+
+        @include mediaPhoneSE {
+            margin-bottom: 25px;
+        }
     }
 
     // .apartments__cards
@@ -21,5 +37,19 @@
         grid-template-columns: repeat(2, 1fr);
         // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         gap: 30px;
+
+        @include mediaLaptop {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        @include mediaTablet {
+            grid-template-columns: 100%;
+            gap: 20px;
+        }
+
+        @include mediaPhone {}
+
+        @include mediaPhoneSE {}
     }
 }

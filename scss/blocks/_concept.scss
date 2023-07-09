@@ -20,7 +20,19 @@
 
     @include mediaLaptop {
         &::before {
+            height: unset;
             bottom: 0px;
+        }
+    }
+
+    @include mediaPhone {
+        &::before {
+            height: 500px;
+        }
+    }
+
+    @include mediaPhoneSE {
+        &::before {
             height: unset;
         }
     }
@@ -35,12 +47,12 @@
         row-gap: 81px;
 
         @include mediaLaptop {
-            padding: 105px 0 130px;
+            padding: 105px 0 120px;
             row-gap: 70px;
         }
 
         @include mediaTablet {
-            padding: 70px 0 90px;
+            padding: 70px 0 80px;
             row-gap: 50px;
         }
 
@@ -57,18 +69,18 @@
         color: $accent;
 
         @include mediaLaptop {
-            font-size: 44px;
+            font-size: 40px;
         }
 
         @include mediaTablet {
-            font-size: 40px;
+            font-size: 38px;
         }
 
         @include mediaPhone {
             font-size: 36px;
         }
 
-        @include mediaPhone {
+        @include mediaPhoneSE {
             font-size: 30px;
         }
     }
@@ -87,27 +99,25 @@
 
         @include mediaLaptop {
             max-width: 490px;
-            padding-bottom: 42px;
-            font-size: 18px;
+            padding-bottom: 60px;
         }
 
         @include mediaTablet {
-            max-width: 440px;
-            padding-bottom: 40px;
+            max-width: 445px;
+            padding-bottom: 45px;
             font-size: 17px;
         }
 
         @include mediaPhone {
-            padding-bottom: 20px;
+            padding-bottom: 40px;
             flex-direction: column;
             row-gap: 15px;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 21px;
         }
 
         @include mediaPhoneSE {
             padding-bottom: 10px;
-            font-size: 15px;
         }
 
         &--address,
@@ -124,6 +134,10 @@
                 height: 21px;
                 background-repeat: no-repeat;
                 background-position: center;
+            }
+
+            @include mediaPhone {
+                padding-left: 31px;
             }
         }
 

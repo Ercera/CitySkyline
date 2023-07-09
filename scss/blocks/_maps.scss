@@ -10,15 +10,43 @@
         
         @include bgNumbers;
         top: 180px;
+
+        @include mediaLaptop {
+            display: none;
+        }
+    }
+
+    @include mediaLaptop {
+        padding: 140px 0;
+    }
+
+    @include mediaTablet {
+        padding: 100px 0;
+    }
+
+    @include mediaPhone {
+        padding: 70px 0;
     }
 
     // .maps__title
     &__title {
         margin-bottom: 88px;
+
+        @include mediaLaptop {
+            margin-bottom: 60px;
+        }
+    
+        @include mediaTablet {
+            margin-bottom: 50px;
+        }
+
+        @include mediaPhone {
+            margin-bottom: 40px;
+        }
     }
 
     // .maps__interactive
-    &__interactive {}
+    // &__interactive {}
 }
 
 .map {

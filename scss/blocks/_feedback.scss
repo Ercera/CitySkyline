@@ -1,8 +1,32 @@
 .feedback {
     padding-bottom: 180px;
+
+    @include mediaLaptop {
+        padding-bottom: 140px;
+    }
+
+    @include mediaTablet {
+        padding-bottom: 100px;
+    }
+
+    @include mediaPhone {
+        padding-bottom: 80px;
+    }
     // .feedback__title
     &__title {
         margin-bottom: 38px;
+
+        @include mediaLaptop {
+            margin-bottom: 30px;
+        }
+
+        @include mediaTablet {
+            margin-bottom: 25px;
+        }
+
+        @include mediaPhone {
+            margin-bottom: 20px;
+        }
     }
     // .feedback__form
     &__form {
@@ -10,6 +34,21 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         align-items: center;
+
+        @include mediaLaptop {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        @include mediaTablet {
+            grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+            gap: 15px;
+        }
+
+        @include mediaPhone {
+            grid-template-columns: 1fr;
+        }
+
     }
 }
 

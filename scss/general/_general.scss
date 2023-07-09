@@ -9,6 +9,10 @@ body {
     font-size: 16px;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 a {
     color: $white;
     transition: color 0.25s ease-in;
@@ -51,6 +55,22 @@ a {
     font-family: $font-headings;
     font-weight: 700;
     color: $accent;
+
+    @include mediaLaptop {
+        font-size: 34px;
+    }
+
+    @include mediaTablet {
+        font-size: 30px;
+    }
+
+    @include mediaPhone {
+        font-size: 28px;
+    }
+
+    @include mediaPhoneSE {
+        font-size: 27px;
+    }
 }
 
 .mail {

@@ -4,13 +4,26 @@
     padding: 120px 0;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+
+    @include mediaLaptop {
+        padding: 100px 0;
+    }
+
+    @include mediaPhone {
+        padding: 80px 0;
+    }
+
+    @include mediaPhone {
+        padding: 60px 0;
+    }
 
     &::after {
         content: "II";
         left: calc(50% + 555px);
         transform: translate(-50%, 0);
         line-height: 1.185;
-        
+
         @include bgNumbers;
     }
 
@@ -20,6 +33,25 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 70px;
+
+        @include mediaLaptop {
+            gap: 60px;
+        }
+
+        @include mediaTablet {
+            gap: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        }
+
+        @include mediaPhone {
+            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        @include mediaPhone {
+            gap: 35px;
+        }
     }
 
     // .advantages__item
@@ -30,12 +62,48 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
+
+        @include mediaLaptop {
+            height: 160px;
+        }
+
+        @include mediaTablet {
+            height: 150px;
+        }
+
+        @include mediaPhone {
+            height: 140px;
+        }
+
+        @include mediaPhone {
+            height: 120px;
+        }
     }
 
     // .advantages__item-img
     &__item-img {
         width: 80px;
         height: 80px;
+
+        @include mediaLaptop {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include mediaTablet {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include mediaPhone {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include mediaPhone {
+            width: 45px;
+            height: 45px;
+        }
     }
 
     // .advantages__item-text
@@ -50,5 +118,17 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        @include mediaLaptop {
+            font-size: 18px;
+        }
+
+        @include mediaTablet {
+            font-size: 16px;
+        }
+
+        @include mediaPhone {
+            font-size: 15px;
+        }
     }
 }
